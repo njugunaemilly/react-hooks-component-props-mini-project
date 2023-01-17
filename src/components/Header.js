@@ -1,9 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
 return (
-
-  <h1>Overrated</h1>
+  <header><h1>{props.name}</h1></header>
 );
 }
 export default Header;

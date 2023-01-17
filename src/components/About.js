@@ -1,13 +1,13 @@
 import React from "react";
 
-function About(){
+function About(props){
     return(
     <aside>
         <img
-        src="https://via.placeholder.com/215"
-        alt="blog logo"
+        src={props.image ||"https://via.placeholder.com/215"}
+        alt="blog logo" 
         />
-        <p>"A blog about learning React"</p>
+        <p>{props.about}</p>
     </aside>
     )   
 }
